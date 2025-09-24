@@ -10,8 +10,8 @@ partial class Program
 
         //Estoy usando raw string literals aquí (""")
         Console.WriteLine($"""
-            Entero {integer}, Decimal: {decimalNumber}, Boolean: { isTrue }, 
-            Cáracter {character}, String: {text}
+            Entero: {integer}, Decimal: {decimalNumber}, Boolean: { isTrue }, 
+            Cáracter: {character}, String: {text}
          """);
     }
 }
