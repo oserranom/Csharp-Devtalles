@@ -5,6 +5,7 @@ partial class Program{
     {
         //Variables(); 
         //ShowNumericTypes(); 
-        ShowStringType(); 
+        //ShowStringType(); 
+        SalesReport(); 
     }
 }
