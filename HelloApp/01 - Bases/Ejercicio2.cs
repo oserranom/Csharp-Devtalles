@@ -2,16 +2,15 @@ partial class Program
 {
     static void CalculateSalary()
     {
-        Console.WriteLine("Introduce tu nombre: ");
-        string name = Console.ReadLine();
+        Console.WriteLine("CALCULADORA DE SALARIO"); 
+        Console.Write("Introduce tu nombre: ");
+        string? name = Console.ReadLine();
 
-        Console.WriteLine("Introduce el número de horas trabajadas este mes: ");
-        string inputHours = Console.ReadLine();
-        double workedHours = double.Parse(inputHours);
+        Console.Write("Introduce el número de horas trabajadas este mes: ");
+        double workedHours = double.Parse(Console.ReadLine()!);
 
-        Console.WriteLine("Introduce tu tarifa por hora: ");
-        string inputPrice = Console.ReadLine();
-        double price = double.Parse(inputPrice);
+        Console.Write("Introduce tu tarifa por hora: ");
+        double price = double.Parse(Console.ReadLine()!);
 
         Console.WriteLine($"El sueldo de {name} para este mes es de {workedHours * price} €");
 
