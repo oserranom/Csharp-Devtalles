@@ -7,6 +7,9 @@ partial class Program{
         //ShowNumericTypes(); 
         //ShowStringType(); 
         //SalesReport(); 
-        CalculateSalary(); 
+        //CalculateSalary(); 
+        //ShowTime();
+        //DaysOfLife(); 
+        DaysUntilBirthDate(); 
     }
 }
