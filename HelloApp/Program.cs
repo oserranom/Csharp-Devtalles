@@ -6,6 +6,7 @@ partial class Program{
         //Variables(); 
         //ShowNumericTypes(); 
         //ShowStringType(); 
-        SalesReport(); 
+        //SalesReport(); 
+        CalculateSalary(); 
     }
 }
