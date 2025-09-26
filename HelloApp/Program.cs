@@ -11,6 +11,8 @@ partial class Program{
         //ShowTime();
         //DaysOfLife(); 
         //DaysUntilBirthDate(); 
-        HandleNullables(); 
+        //HandleNullables(); 
+        //Operators(); 
+        Arrays(); 
     }
 }
