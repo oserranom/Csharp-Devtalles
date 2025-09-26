@@ -10,6 +10,7 @@ partial class Program{
         //CalculateSalary(); 
         //ShowTime();
         //DaysOfLife(); 
-        DaysUntilBirthDate(); 
+        //DaysUntilBirthDate(); 
+        HandleNullables(); 
     }
 }
