@@ -13,6 +13,7 @@ partial class Program{
         //DaysUntilBirthDate(); 
         //HandleNullables(); 
         //Operators(); 
-        Arrays(); 
+        //Arrays(); 
+        InventoryManager(); 
     }
 }
