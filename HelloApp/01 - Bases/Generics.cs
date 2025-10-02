@@ -7,6 +7,12 @@ partial class Program
 
         System.Console.WriteLine($"Tamaño del array de nombres: {GetArrayLength(names)}");
         System.Console.WriteLine($"Tamaño del array de números: {GetArrayLength(numbers)}");
+
+        Box<int> numberBox = new Box<int> { Content = 50 };
+        Box<string> stringBox = new Box<string> { Content = "Ahora soy texto, la magia de los genéricos..." };
+
+        numberBox.Show();
+        stringBox.Show(); 
     }
 
     //Métodos sin genéricos
@@ -23,6 +29,16 @@ partial class Program
     //Genérico
     static int GetArrayLength<T>(T[] array)
     {
-        return array.Length; 
+        return array.Length;
+    }
+
+    class Box<T>
+    {
+        public T? Content { get; set; }
+
+        public void Show()
+        {
+            System.Console.WriteLine($"Contenido: {Content}");
+        }
     }
 }
