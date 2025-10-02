@@ -15,6 +15,7 @@ partial class Program{
         //Operators(); 
         //Arrays(); 
         //InventoryManager(); 
-        ListDictionary(); 
+        //ListDictionary(); 
+        DataStructures();
     }
 }
