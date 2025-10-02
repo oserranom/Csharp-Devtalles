@@ -38,15 +38,15 @@ partial class Program
                     if (quantity <= stock[i])
                     {
                         double? total = quantity * prices[i];
-                        Console.WriteLine($"Compra realizada, total a pagar: {total}");
+                        Console.WriteLine($"Compra realizada, total a pagar: {total:C}");
 
-                        stock[i] = (int)stock[i] - (int)quantity;
+                        stock[i] -= (int)quantity;
                         Console.WriteLine("INVENTARIO DE PRODUCTOS");
                         Console.WriteLine("___________________________________________________________________\n"); 
                         
                         for (int a = 0; a < products.Length; a++)
                         {
-                            Console.WriteLine($"Producto: {products[a]}, Stock: {stock[a]}, Precio: {prices[a]}");
+                            Console.WriteLine($"Producto: {products[a]}, Stock: {stock[a]}, Precio: {prices[a]} €");
                             Console.WriteLine("___________________________________________________________________\n");
                         }
                         return; 
@@ -54,7 +54,6 @@ partial class Program
                     else
                     {
                         Console.WriteLine("No disponemos de stock suficiente para ese producto");
-                        return;
                     }
                 }
                 else

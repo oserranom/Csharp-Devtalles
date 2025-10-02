@@ -14,6 +14,7 @@ partial class Program{
         //HandleNullables(); 
         //Operators(); 
         //Arrays(); 
-        InventoryManager(); 
+        //InventoryManager(); 
+        ListDictionary(); 
     }
 }
