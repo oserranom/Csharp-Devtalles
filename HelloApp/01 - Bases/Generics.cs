@@ -38,7 +38,7 @@ partial class Program
 
         public void Show()
         {
-            System.Console.WriteLine($"Contenido: {Content}");
+            WriteLine($"Contenido: {Content}");
         }
     }
 }

@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup Label="Simplificar uso de WriteLine y ReadLine" >
+    <Using Include="System.Console" Static="true" />
+  </ItemGroup>
+
+
 </Project>

@@ -17,6 +17,7 @@ partial class Program{
         //InventoryManager(); 
         //ListDictionary(); 
         //DataStructures();
-        Generics(); 
+        //Generics(); 
+        Conditionals(); 
     }
 }
