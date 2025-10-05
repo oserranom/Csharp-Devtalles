@@ -17,9 +17,13 @@ partial class Program{
         //InventoryManager(); 
         //ListDictionary(); 
         //DataStructures();
+
+
         //Generics(); 
         //Conditionals(); 
         //Loops(); 
-        FizzBuzz(); 
+        //FizzBuzz(); 
+        //LoopsControl(); 
+        LoopGame(); 
     }
 }

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\oserrano\\.nuget\\packages\\": {}
+    "C:\\Users\\Oscar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oserrano\\Desktop\\GitHub\\Csharp-Devtalles\\HelloApp\\HelloApp.csproj",
+      "projectUniqueName": "C:\\Users\\Oscar\\Desktop\\Projects\\Csharp Devtalles\\HelloApp\\HelloApp.csproj",
       "projectName": "HelloApp",
-      "projectPath": "C:\\Users\\oserrano\\Desktop\\GitHub\\Csharp-Devtalles\\HelloApp\\HelloApp.csproj",
-      "packagesPath": "C:\\Users\\oserrano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oserrano\\Desktop\\GitHub\\Csharp-Devtalles\\HelloApp\\obj\\",
+      "projectPath": "C:\\Users\\Oscar\\Desktop\\Projects\\Csharp Devtalles\\HelloApp\\HelloApp.csproj",
+      "packagesPath": "C:\\Users\\Oscar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Oscar\\Desktop\\Projects\\Csharp Devtalles\\HelloApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oserrano\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\oserrano\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
