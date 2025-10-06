@@ -27,6 +27,7 @@ partial class Program{
         //LoopGame(); 
         //Conversions();
         //ConvertionsDataTime(); 
-        Functions(); 
+        //Functions(); 
+        PrintMultiplicationTable(7, 10); 
     }
 }
