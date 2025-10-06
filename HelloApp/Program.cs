@@ -28,6 +28,7 @@ partial class Program{
         //Conversions();
         //ConvertionsDataTime(); 
         //Functions(); 
-        PrintMultiplicationTable(7, 10); 
+        //PrintMultiplicationTable(7, 10); 
+        PrintFactorial(5);
     }
 }
