@@ -26,6 +26,7 @@ partial class Program{
         //LoopsControl(); 
         //LoopGame(); 
         //Conversions();
-        ConvertionsDataTime(); 
+        //ConvertionsDataTime(); 
+        Functions(); 
     }
 }
