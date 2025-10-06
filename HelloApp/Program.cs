@@ -25,6 +25,7 @@ partial class Program{
         //FizzBuzz(); 
         //LoopsControl(); 
         //LoopGame(); 
-        Conversions();
+        //Conversions();
+        ConvertionsDataTime(); 
     }
 }
