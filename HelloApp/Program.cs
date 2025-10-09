@@ -31,6 +31,8 @@ partial class Program{
         //PrintMultiplicationTable(7, 10); 
         //PrintFactorial(5);
         //Tuples(); 
-        AnnonymousFunctions(); 
+        //AnnonymousFunctions(); 
+
+        TestingClasses(); 
     }
 }
