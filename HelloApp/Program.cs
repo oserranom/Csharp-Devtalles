@@ -30,6 +30,7 @@ partial class Program{
         //Functions(); 
         //PrintMultiplicationTable(7, 10); 
         //PrintFactorial(5);
-        Tuples(); 
+        //Tuples(); 
+        AnnonymousFunctions(); 
     }
 }
