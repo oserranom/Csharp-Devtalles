@@ -34,6 +34,7 @@ partial class Program{
         //AnnonymousFunctions(); 
 
         //TestingClasses(); 
-        Properties(); 
+        //Properties(); 
+        Methods(); 
     }
 }
