@@ -2,16 +2,38 @@ partial class Program
 {
     static void Methods()
     {
-        Car car = new Car();
-        car.Model = "Yaris";
-        car.Year = 2022;
-        WriteLine(car.ShowInfo());
+        // Car car = new Car();
+        // car.Model = "Yaris";
+        // car.Year = 2022;
+        // WriteLine(car.ShowInfo());
 
-        car.ShowMessage("Cambiando de modelo");
-        car.ChangeModel("Patrol");
-        WriteLine(car.ShowInfo());
+        // car.ShowMessage("Cambiando de modelo");
+        // car.ChangeModel("Patrol");
+        // WriteLine(car.ShowInfo());
 
-        Car.GeneralInfo(); 
+        // Car.GeneralInfo(); 
+
+        //Using Constructor:
+        // Car sportCar = new Car("Ferrari", 2020);
+        // WriteLine(car.ShowInfo());
+
+        //Sintáxis simplificada:
+        //Car collectionCar = new Car { Model = "Cadillac", Year = 1980 }; //Error hay que ver por qué
+
+        //Lista de objetos
+        List<Car> cars = new()
+        {
+            new Car("Duster", 2020),
+            new Car("Stepway", 2019),
+            new Car("Captur", 2021)
+
+        };
+
+        WriteLine("Listado de automóviles");
+        foreach(var cochesito in cars)
+        {
+            WriteLine(cochesito.ShowInfo());
+        }
     }
 }
 
@@ -19,6 +41,13 @@ class Car
 {
     public string? Model { get; set; }
     public int? Year { get; set; }
+
+    public Car(string model, int year)
+    {
+        Model = model;
+        Year = year;
+    }
+
     public void ChangeModel(string newModel)
     {
         Model = newModel;
