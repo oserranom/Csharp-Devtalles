@@ -33,6 +33,7 @@ partial class Program{
         //Tuples(); 
         //AnnonymousFunctions(); 
 
-        TestingClasses(); 
+        //TestingClasses(); 
+        Properties(); 
     }
 }
