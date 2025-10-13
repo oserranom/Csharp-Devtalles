@@ -42,6 +42,7 @@ partial class Program{
         //Ejecutar finalizadores
         // GC.WaitForPendingFinalizers(); 
 
-        ProductSalesDemo(); 
+        //ProductSalesDemo(); 
+        BusSalesDemo(); 
     }
 }
