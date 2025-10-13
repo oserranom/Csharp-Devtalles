@@ -35,6 +35,11 @@ partial class Program{
 
         //TestingClasses(); 
         //Properties(); 
-        Methods(); 
+        Methods();
+
+        //Forzar recolección de bsaura
+         // GC.Collect();
+        //Ejecutar finalizadores
+         // GC.WaitForPendingFinalizers(); 
     }
 }

@@ -1,7 +1,8 @@
 partial class Program
 {
     static void Methods()
-    {
+    {   
+        //Constructor por defecto
         // Car car = new Car();
         // car.Model = "Yaris";
         // car.Year = 2022;
@@ -14,8 +15,8 @@ partial class Program
         // Car.GeneralInfo(); 
 
         //Using Constructor:
-        // Car sportCar = new Car("Ferrari", 2020);
-        // WriteLine(car.ShowInfo());
+        Car sportCar = new Car("Ferrari", 2020);
+        WriteLine(sportCar.ShowInfo());
 
         //Sintáxis simplificada:
         //Car collectionCar = new Car { Model = "Cadillac", Year = 1980 }; //Error hay que ver por qué
@@ -42,10 +43,17 @@ class Car
     public string? Model { get; set; }
     public int? Year { get; set; }
 
+    //Constructor
     public Car(string model, int year)
     {
         Model = model;
         Year = year;
+    }
+
+    //Destructor (~)
+    ~Car()
+    {
+        WriteLine("Destructor activado. Recurso liberado.");
     }
 
     public void ChangeModel(string newModel)
