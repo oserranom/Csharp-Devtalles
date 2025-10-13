@@ -2,7 +2,22 @@ partial class Program
 {
     static void BusSalesDemo()
     {
+        Bus mercedes = new("Merceces-Benz", "Citaro", 1997, 50000, 0);
+        Bus ikarus = new("Ikarus", "260", 1972, 25000, 0);
+        Bus tata = new("Tata", "1510", 1998, 32000, 0);
 
+        Fleet flota = new();
+        flota.AddBuss(mercedes);
+        flota.AddBuss(ikarus);
+        flota.AddBuss(tata);
+
+        flota.ShowFleetInfo();
+
+        mercedes.Drive(1500);
+        ikarus.Drive(850);
+        tata.Drive(2250);
+
+        flota.ShowFleetInfo(); 
     }
 }
 
@@ -26,8 +41,38 @@ class Bus
     public void Drive(int km)
     {
         TotalKilometers += km;
-        WriteLine($"El vehiculo se ha conducido durante {km} Km, Odómetro: {TotalKilometers}"); 
+        WriteLine($"El vehiculo se ha conducido durante {km} Km, Odómetro: {TotalKilometers}");
     }
 
+    public double? ShowPrice()
+    {
+        return Price;
+    }
 
+    public void ShowInfo()
+    {
+        WriteLine($"Bus: {Brand} {Model} del {Year} | Km totales: {TotalKilometers}"); 
+    }
+
+}
+
+class Fleet
+{
+    private List<Bus> buses = new List<Bus>();
+
+    public void AddBuss(Bus bus)
+    {
+        buses.Add(bus);
+        WriteLine("Se ha añadido el vehiculo a la flota.");
+    }
+    
+    public void ShowFleetInfo()
+    {
+        WriteLine("Flota de autobuses:");
+
+        foreach(var bus in buses)
+        {
+            bus.ShowInfo(); 
+        }
+    }
 }
