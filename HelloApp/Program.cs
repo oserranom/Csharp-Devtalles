@@ -35,11 +35,13 @@ partial class Program{
 
         //TestingClasses(); 
         //Properties(); 
-        Methods();
+        //Methods();
 
         //Forzar recolección de bsaura
-         // GC.Collect();
+        // GC.Collect();
         //Ejecutar finalizadores
-         // GC.WaitForPendingFinalizers(); 
+        // GC.WaitForPendingFinalizers(); 
+
+        ProductSalesDemo(); 
     }
 }
