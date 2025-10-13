@@ -2,9 +2,9 @@ partial class Program
 {
     static void BusSalesDemo()
     {
-        Bus mercedes = new("Merceces-Benz", "Citaro", 1997, 50000, 0);
-        Bus ikarus = new("Ikarus", "260", 1972, 25000, 0);
-        Bus tata = new("Tata", "1510", 1998, 32000, 0);
+        Bus mercedes = new("Merceces-Benz", "Citaro", 1997, 50_000, 0);
+        Bus ikarus = new("Ikarus", "260", 1972, 25_000, 0);
+        Bus tata = new("Tata", "1510", 1998, 32_000, 0);
 
         Fleet flota = new();
         flota.AddBuss(mercedes);
@@ -63,7 +63,7 @@ class Fleet
     public void AddBuss(Bus bus)
     {
         buses.Add(bus);
-        WriteLine("Se ha añadido el vehiculo a la flota.");
+        WriteLine($"Se ha añadido el vehiculo {bus.Brand} {bus.Model} a la flota.");
     }
     
     public void ShowFleetInfo()

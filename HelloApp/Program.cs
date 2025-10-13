@@ -43,6 +43,7 @@ partial class Program{
         // GC.WaitForPendingFinalizers(); 
 
         //ProductSalesDemo(); 
-        BusSalesDemo(); 
+        //BusSalesDemo(); 
+        Inheritance(); 
     }
 }
