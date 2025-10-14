@@ -2,8 +2,20 @@ partial class Program
 {
     static void Visibility()
     {
+        Jedi jedi = new();
+        jedi.PowerLevel = 5000;
+        jedi.LightsaberColor = "Azul";
+        jedi.UseForce();
 
-    }
+        //jedi.PrivateField => Error
+        //jedi.ProtectedField => Error
+
+        jedi.RevealSecrets();
+
+        Sith sith = new();
+        sith.ShowProtected(); 
+
+    }    
 }
 
 class Jedi
@@ -33,6 +45,13 @@ class Jedi
     protected void Train()
     {
         WriteLine("Estoy entrenando para ser mejor jedi");
+    }
+
+    public void RevealSecrets()
+    {
+        //Acceso desde dentro de la clase 
+        WriteLine(ProtectedField);
+        WriteLine(PrivateField);
     }
 }
 
