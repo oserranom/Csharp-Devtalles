@@ -44,6 +44,8 @@ partial class Program{
 
         //ProductSalesDemo(); 
         //BusSalesDemo(); 
-        Inheritance(); 
+        //Inheritance(); 
+        //AbstractClass(); 
+        Visibility(); 
     }
 }
