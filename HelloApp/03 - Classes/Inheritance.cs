@@ -1,8 +1,15 @@
 partial class Program
 {
-    static void Inheritance()
+    public static void Inheritance()
     {
+        Student student = new() { Name = "Harry Potter", House = "Gryffindor" };
+        Professor professor = new() { Name = "Severus Snape", Subject = "Pociones" };
 
+        student.Greet();
+        student.ShowHouse();
+
+        professor.Greet();
+        professor.MySubject(); 
     }
 }
 
