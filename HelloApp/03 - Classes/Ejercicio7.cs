@@ -4,8 +4,18 @@ partial class Program
 {
     static void Employees()
     {
-        Employee oscar = new("uksdhjf", 34500, "QC Analyst");
-        oscar.ShowInfo(); 
+        List<Employee> empleados = new();
+
+        empleados.Add(new TeamLeader("Carlos", 5000));
+        empleados.Add(new Developer("Anna", 4000));
+        empleados.Add(new TeamLeader("Laura", 6000));
+        empleados.Add(new Developer("Oscar", 3500)); 
+
+        WriteLine("LISTA DE EMPLEADOS:"); 
+        foreach(var empleado in empleados)
+        {
+            empleado.ShowInfo(); 
+        }
     }
 }
 
@@ -28,7 +38,7 @@ class Employee
 
     public void ShowInfo()
     {
-        WriteLine($"{Name} ({Position}, {Salary}, Bonus: {CalculateBonus()}) ");
+        WriteLine($"{Name} ({Position}, {Salary}, Bonus: {CalculateBonus():C}) ");
     }
 }
 
@@ -41,7 +51,7 @@ class TeamLeader : Employee
     }
 }
 
-class Developer: Employee
+class Developer : Employee
 {
     public Developer(string name, double salary):base(name, salary, "Developer"){}
     public override double CalculateBonus()
