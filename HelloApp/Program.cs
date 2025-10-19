@@ -54,6 +54,7 @@ partial class Program{
         //Employees(); 
 
 
-        HandleException(); 
+        //HandleException(); 
+        Collections(); 
     }
 }
