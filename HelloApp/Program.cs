@@ -55,6 +55,7 @@ partial class Program{
 
 
         //HandleException(); 
-        Collections(); 
+        //Collections(); 
+        Linq(); 
     }
 }
