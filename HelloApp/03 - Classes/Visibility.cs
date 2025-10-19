@@ -25,7 +25,7 @@ partial class Program
 interface IforceUser
 {
     int PowerLevel { get; set; }
-    string LightsaberColor { get; set; }
+    string? LightsaberColor { get; set; }
 
     void UseForce(); 
 
@@ -68,7 +68,7 @@ class Jedi:IforceUser
     }
 }
 
-class Sith : Jedi, IforceUser
+class Sith : Jedi
 {
     public new void UseForce()
     {

@@ -1,5 +1,8 @@
 ﻿
 
+using System.Reflection.Metadata;
+using System.Runtime.ExceptionServices;
+
 partial class Program{
     static void Main(string[] args)
     {
@@ -33,6 +36,7 @@ partial class Program{
         //Tuples(); 
         //AnnonymousFunctions(); 
 
+
         //TestingClasses(); 
         //Properties(); 
         //Methods();
@@ -47,6 +51,9 @@ partial class Program{
         //Inheritance(); 
         //AbstractClass(); 
         //Visibility(); 
-        Employees(); 
+        //Employees(); 
+
+
+        HandleException(); 
     }
 }
