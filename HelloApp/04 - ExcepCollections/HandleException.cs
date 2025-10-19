@@ -1,7 +1,7 @@
 partial class Program
 {
 
-    static string? amount; 
+    static string? amount;
     static void HandleException()
     {
         try
@@ -14,9 +14,19 @@ partial class Program
 
             if (string.IsNullOrEmpty(amount)) return;
 
-            double amountValue = double.Parse(amount);
+            if (double.TryParse(amount, out double amountValue))
+            {
+                WriteLine($"La cantidad introducida es de {amountValue:C}");
+            }
+            else
+            {
+                WriteLine("La cantidad no es convertible a un número");
+            }
 
-            WriteLine($"La cantidad introducida es de {amountValue:C}");
+            //double amountValue = double.Parse(amount);
+
+            ValidateAge(16);
+
         }
         catch (DivideByZeroException)
         {
@@ -25,12 +35,27 @@ partial class Program
         }
         catch (FormatException) when (amount?.Contains('$') == true)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             WriteLine("No es necesario usar símbolos de divisas");
         }
         catch (Exception ex)
         {
-            WriteLine(ex.Message); 
+            Console.ForegroundColor = ConsoleColor.Red;
+            WriteLine(ex.Message);
         }
- 
+        finally
+        {
+            Console.ResetColor(); 
+            WriteLine("Esto forma parte del bloque finally, se ejecuta siempre"); 
+        }
+
+    }
+    
+    static void ValidateAge(int age)
+    {
+        if(age < 18)
+        {
+            throw new ArgumentException("La edad debe ser mayor a 18");
+        }
     }
 }
