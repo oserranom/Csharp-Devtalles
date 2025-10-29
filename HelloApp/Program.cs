@@ -56,6 +56,8 @@ partial class Program{
 
         //HandleException(); 
         //Collections(); 
-        Linq(); 
+        //Linq(); 
+        AdvancedLinq.Program.AdvancedLINQ(); 
+
     }
 }
