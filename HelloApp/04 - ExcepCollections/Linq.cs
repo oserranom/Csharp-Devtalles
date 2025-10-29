@@ -55,14 +55,38 @@ partial class Program
         //Method
         var avengersMethod = characters.Where(c => c.Team == "Avengers");
 
-        foreach (var character in avengersQuery)
-        {
-            WriteLine(character);
-        }
+        // foreach (var character in avengersQuery)
+        // {
+        //     WriteLine(character);
+        // }
 
-        foreach (var character in avengersMethod)
+        // foreach (var character in avengersMethod)
+        // {
+        //     WriteLine($"{character.Alias} ({character.Name})");
+        // }
+
+        var sortedQuery = from c in characters orderby c.Name descending select c.Name;
+        var sortedMethod = characters.OrderByDescending(c => c.Name);
+
+        WriteLine("Ordenar nombres de manera descendente");
+
+        // foreach (var name in sortedQuery)
+        // {
+        //     WriteLine(name);
+        // }
+
+        // foreach(var name in sortedMethod)
+        // {
+        //     WriteLine(name); 
+        // }
+
+        var firstThreeQuery = (from c in characters select c).Take(3);
+        var firstThreeMethod = characters.Take(3);
+
+        WriteLine("First three: "); 
+        foreach(var name in firstThreeQuery)
         {
-            WriteLine($"{character.Alias} ({character.Name})"); 
+            WriteLine(name.Name); 
         }
     }
 }
