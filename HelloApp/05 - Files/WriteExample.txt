@@ -1,0 +1,2 @@
+Podemos escribir en un archivo
+La hora actual es: 18:03:14

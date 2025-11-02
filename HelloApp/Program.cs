@@ -61,7 +61,10 @@ partial class Program{
         //SalesAnalysis(); 
 
 
-        FileExample(); 
+        //FileExample(); 
+        //DirectoryExample(); 
+        //PathExample(); 
+        WriteFileExample(); 
 
     }
 }
