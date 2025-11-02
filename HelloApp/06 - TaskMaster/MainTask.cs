@@ -1,5 +1,12 @@
-partial class Program
+using TaskMaster;
+namespace TaskMaster
 {
+    partial class Program
+{
+    static FileActions<Task> fileActions = new("./06 - TaskMaster/tasks.json");
+    static List<Task> tasks = fileActions.ReadFile(); 
+    
+    static Queries queries = new(tasks); 
   public static void TaskMaster()
   {
     bool salir = false;
@@ -20,7 +27,7 @@ partial class Program
       switch (ReadLine())
       {
         case "1":
-          // ListTasks()
+          queries.ListTasks(); 
           break;
         case "2":
           // AddTask();
@@ -53,3 +60,5 @@ partial class Program
   }
 
 }
+}
+
