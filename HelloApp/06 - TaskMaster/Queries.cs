@@ -53,7 +53,7 @@ namespace TaskMaster
                 return Tasks;
             }
         }
-        
+
         public List<Task> MarkAsCompleted()
         {
             try
@@ -79,12 +79,51 @@ namespace TaskMaster
                 ForegroundColor = ConsoleColor.Green;
                 WriteLine("La tarea se ha completado con éxito");
                 ResetColor();
-                return Tasks; 
+                return Tasks;
             }
             catch (Exception ex)
             {
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine($"Error al completar tarea: {ex.Message}");
+                return Tasks;
+            }
+        }
+        
+
+        public List<Task> EditTask()
+        {
+            try
+            {
+                ResetColor();
+                Clear();
+
+                WriteLine("----------Editar Tarea----------");
+                WriteLine("Introduce la Id de la tarea que deseas editar: ");
+                var id = ReadLine()!;
+
+                Task task = Tasks.Find(t => t.Id == id)!;
+                if (task == null)
+                {
+                    ForegroundColor = ConsoleColor.Red;
+                    WriteLine($"No se ha encontrado la tarea con id: {id}");
+                    ResetColor();
+                    return Tasks;
+                }
+
+                WriteLine("Escribe la nueva descripción de la tarea: ");
+                var description = ReadLine()!;
+                task.Description = description;
+                task.ModifiedAt = DateTime.Now;
+                
+                ForegroundColor = ConsoleColor.Green;
+                WriteLine("La tarea se ha modificado con éxito");
+                ResetColor();
+                return Tasks; 
+            }
+            catch (Exception ex)
+            {
+                ForegroundColor = ConsoleColor.Red;
+                WriteLine($"Error al modificar tarea: {ex.Message}");
                 return Tasks;
             }
         }
