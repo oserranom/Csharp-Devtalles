@@ -28,3 +28,6 @@ C:\Users\oserrano\Desktop\GitHub\Csharp-Devtalles\HelloApp\obj\Debug\net8.0\refi
 C:\Users\oserrano\Desktop\GitHub\Csharp-Devtalles\HelloApp\obj\Debug\net8.0\HelloApp.pdb
 C:\Users\oserrano\Desktop\GitHub\Csharp-Devtalles\HelloApp\obj\Debug\net8.0\HelloApp.genruntimeconfig.cache
 C:\Users\oserrano\Desktop\GitHub\Csharp-Devtalles\HelloApp\obj\Debug\net8.0\ref\HelloApp.dll
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\HelloApp\bin\Debug\net8.0\BetterConsoleTables.dll
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\HelloApp\obj\Debug\net8.0\HelloApp.csproj.AssemblyReference.cache
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\HelloApp\obj\Debug\net8.0\HelloApp.csproj.Up2Date
