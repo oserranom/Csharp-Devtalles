@@ -163,7 +163,7 @@ namespace TaskMaster
                 return Tasks;
             }
         }
-        
+
         public void TasksByState()
         {
             Clear();
@@ -197,8 +197,8 @@ namespace TaskMaster
                     return;
                 }
 
-                ForegroundColor = completed ? ConsoleColor.Green : ConsoleColor.Red; 
-                
+                ForegroundColor = completed ? ConsoleColor.Green : ConsoleColor.Red;
+
                 //Mostrar filteredTasks
 
                 Table table = new Table("Id", "Descripción", "Estado");
@@ -216,6 +216,47 @@ namespace TaskMaster
             {
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine($"Error al filtrar tareas: {ex.Message}");
+            }
+        }
+        
+        public void TasksByDescription()
+        {
+            Clear();
+
+            try
+            {
+                ResetColor();
+                WriteLine("-------Tareas por descripción------");
+                WriteLine("Escribe la descripción de la tarea que deseas buscar: ");
+                string description = ReadLine()!;
+
+                List<Task> matchingTasks = Tasks.FindAll(t => t.Description?.Contains(description, StringComparison.OrdinalIgnoreCase) ?? false);
+
+                if (matchingTasks.Count == 0)
+                {
+                    ForegroundColor = ConsoleColor.Red;
+                    WriteLine("No se han encontrado tareas con el estado solicitado");
+                    ResetColor();
+                    return;
+                }
+
+                //Mostrar filteredTasks
+
+                Table table = new Table("Id", "Descripción", "Estado");
+                foreach (var task in matchingTasks)
+                {
+                    table.AddRow(task.Id, task.Description, task.Completed ? "Completada" : "In process");
+                }
+
+                table.Config = TableConfiguration.Unicode();
+
+                Write(table.ToString());
+                ReadKey();
+            }
+            catch (Exception ex)
+            {
+                ForegroundColor = ConsoleColor.Red;
+                WriteLine($"Error al filtrar tarea: {ex.Message}");
             }
         }
 
