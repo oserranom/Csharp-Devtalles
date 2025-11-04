@@ -127,7 +127,7 @@ namespace TaskMaster
                 return Tasks;
             }
         }
-        
+
         public List<Task> RemoveTask()
         {
             try
@@ -149,7 +149,7 @@ namespace TaskMaster
                 }
 
                 //Eliminar task aquí:
-                Tasks.Remove(task); 
+                Tasks.Remove(task);
 
                 ForegroundColor = ConsoleColor.Green;
                 WriteLine("La tarea se ha eliminado con éxito");
@@ -161,6 +161,61 @@ namespace TaskMaster
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine($"Error al eliminar tarea: {ex.Message}");
                 return Tasks;
+            }
+        }
+        
+        public void TasksByState()
+        {
+            Clear();
+
+            try
+            {
+                ResetColor();
+                WriteLine("-------Tareas por estado------");
+                WriteLine("1. Completadas");
+                WriteLine("2. In process");
+                WriteLine("Escribe la opción de las tareas a mostrar: ");
+                string taskState = ReadLine()!;
+
+                if (taskState != "1" && taskState != "2")
+                {
+                    ForegroundColor = ConsoleColor.Red;
+                    WriteLine("Opción inexistente");
+                    ResetColor();
+                    return;
+                }
+
+                bool completed = taskState == "1";
+
+                List<Task> filteredTasks = Tasks.Where(t => t.Completed == completed).ToList();
+
+                if (filteredTasks.Count == 0)
+                {
+                    ForegroundColor = ConsoleColor.Red;
+                    WriteLine("No se han encontrado tareas con el estado solicitado");
+                    ResetColor();
+                    return;
+                }
+
+                ForegroundColor = completed ? ConsoleColor.Green : ConsoleColor.Red; 
+                
+                //Mostrar filteredTasks
+
+                Table table = new Table("Id", "Descripción", "Estado");
+                foreach (var task in filteredTasks)
+                {
+                    table.AddRow(task.Id, task.Description, task.Completed ? "Completada" : "In process");
+                }
+
+                table.Config = TableConfiguration.Unicode();
+
+                Write(table.ToString());
+                ReadKey();
+            }
+            catch (Exception ex)
+            {
+                ForegroundColor = ConsoleColor.Red;
+                WriteLine($"Error al filtrar tareas: {ex.Message}");
             }
         }
 

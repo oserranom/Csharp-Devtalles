@@ -42,7 +42,7 @@ namespace TaskMaster
             RemoveTask();
             break;
           case "6":
-            //TasksByState();
+            queries.TasksByState();
             break;
           case "7":
             //TasksByDescription();
@@ -100,17 +100,20 @@ namespace TaskMaster
     }
 
     public static void RemoveTask()
-        {
-            try
-            {
-              var tasks = queries.RemoveTask();
-              fileActions.WriteFile(tasks);
-            }
-            catch (Exception ex)
-            {
-              WriteLine($"No se pudo eliminar la tarea: {ex.Message}"); 
-            }
-        }
+    {
+      try
+      {
+        var tasks = queries.RemoveTask();
+        fileActions.WriteFile(tasks);
+      }
+      catch (Exception ex)
+      {
+        WriteLine($"No se pudo eliminar la tarea: {ex.Message}");
+      }
+    }
+        
+    
+
 
   }
 }
