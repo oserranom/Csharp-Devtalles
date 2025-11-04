@@ -88,7 +88,7 @@ namespace TaskMaster
                 return Tasks;
             }
         }
-        
+
 
         public List<Task> EditTask()
         {
@@ -114,16 +114,52 @@ namespace TaskMaster
                 var description = ReadLine()!;
                 task.Description = description;
                 task.ModifiedAt = DateTime.Now;
-                
+
                 ForegroundColor = ConsoleColor.Green;
                 WriteLine("La tarea se ha modificado con éxito");
                 ResetColor();
-                return Tasks; 
+                return Tasks;
             }
             catch (Exception ex)
             {
                 ForegroundColor = ConsoleColor.Red;
                 WriteLine($"Error al modificar tarea: {ex.Message}");
+                return Tasks;
+            }
+        }
+        
+        public List<Task> RemoveTask()
+        {
+            try
+            {
+                ResetColor();
+                Clear();
+
+                WriteLine("----------Eliminar Tarea----------");
+                WriteLine("Introduce la Id de la tarea que deseas eliminar: ");
+                var id = ReadLine()!;
+
+                Task task = Tasks.Find(t => t.Id == id)!;
+                if (task == null)
+                {
+                    ForegroundColor = ConsoleColor.Red;
+                    WriteLine($"No se ha encontrado la tarea con id: {id}");
+                    ResetColor();
+                    return Tasks;
+                }
+
+                //Eliminar task aquí:
+                Tasks.Remove(task); 
+
+                ForegroundColor = ConsoleColor.Green;
+                WriteLine("La tarea se ha eliminado con éxito");
+                ResetColor();
+                return Tasks;
+            }
+            catch (Exception ex)
+            {
+                ForegroundColor = ConsoleColor.Red;
+                WriteLine($"Error al eliminar tarea: {ex.Message}");
                 return Tasks;
             }
         }
