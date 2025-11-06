@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "oMPQ3hOi4HWVQk6nCb1ylyTZ6WKL60rttaYBBsOWzWY=",
+  "Hash": "0i21iMiRJGQNvtJ8FXnE/18sGiXiWmz0OsjvDp70fiY=",
   "Source": "FirstAPI",
   "BasePath": "_content/FirstAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "FirstAPI\\wwwroot",
+      "Source": "FirstAPI",
+      "ContentRoot": "C:\\Users\\Oscar\\Desktop\\Projects\\Csharp Devtalles\\FirstAPI\\wwwroot\\",
+      "BasePath": "_content/FirstAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Oscar\\Desktop\\Projects\\Csharp Devtalles\\FirstAPI\\wwwroot\\index.html",
+      "SourceId": "FirstAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Oscar\\Desktop\\Projects\\Csharp Devtalles\\FirstAPI\\wwwroot\\",
+      "BasePath": "_content/FirstAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
 }

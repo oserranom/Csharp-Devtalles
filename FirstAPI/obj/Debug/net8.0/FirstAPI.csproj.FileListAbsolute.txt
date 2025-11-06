@@ -32,3 +32,4 @@ C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\FirstAPI\obj\Debug\net8.0\refin
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\FirstAPI\obj\Debug\net8.0\FirstAPI.pdb
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\FirstAPI\obj\Debug\net8.0\FirstAPI.genruntimeconfig.cache
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\FirstAPI\obj\Debug\net8.0\ref\FirstAPI.dll
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\FirstAPI\bin\Debug\net8.0\FirstAPI.staticwebassets.runtime.json
