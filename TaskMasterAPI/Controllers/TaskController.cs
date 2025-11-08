@@ -43,4 +43,36 @@ public class TaskController:ControllerBase
         TaskDataStoreApi.Current.Tasks.Add(newTask);
         return Ok(newTask);
     }
+
+    [HttpPut("{id}")]
+    public ActionResult<Models.Task> UpdateTask(int id, Models.TaskInsert taskInsert)
+    {
+        var task = TaskDataStoreApi.Current.Tasks.FirstOrDefault(t => t.Id == id);
+        if (task == null)
+        {
+            return NotFound("La tarea no existe");
+        }
+
+        task.Title = taskInsert.Title;
+        task.Description = taskInsert.Description;
+        task.UpdatedAt = DateTime.Now;
+
+        return Ok(task);
+    }
+
+    [HttpDelete("{id}")]
+    public ActionResult DeleteTask(int id)
+    {
+        var task = TaskDataStoreApi.Current.Tasks.FirstOrDefault(t => t.Id == id);
+        if (task == null)
+        {
+            return NotFound("La tarea no existe");
+        }
+
+        TaskDataStoreApi.Current.Tasks.Remove(task);
+        return NoContent();
+        
+    }
+
+
 }
