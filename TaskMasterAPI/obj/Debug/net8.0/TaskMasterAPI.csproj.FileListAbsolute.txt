@@ -1,3 +1,11 @@
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.AssemblyReference.cache
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfoInputs.cache
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfo.cs
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.sourcelink.json
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\appsettings.json
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\TaskMasterAPI.exe
@@ -10,14 +18,6 @@ C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.AssemblyReference.cache
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfoInputs.cache
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.AssemblyInfo.cs
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.csproj.CoreCompileInputs.cache
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\TaskMasterAPI.sourcelink.json
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Oscar\Desktop\Projects\Csharp Devtalles\TaskMasterAPI\obj\Debug\net8.0\staticwebassets\msbuild.TaskMasterAPI.Microsoft.AspNetCore.StaticWebAssets.props
